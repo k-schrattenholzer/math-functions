@@ -142,7 +142,7 @@ This function should be dynamic, accepting an array of any length.
 */
 
 ///////Katie Note///////
-//I did some research on multiplying the elements of an array and cam across the reduce function. I struggled to apply it to this function but was eventually able to get it working but I really don't have a good grasp on the 'why' - or the steps the reduce function is going through in handling the dynamic array
+//I did some research on multiplying the elements of an array and cam across the reduce function. I struggled to apply it to this function and was eventually able to get it working but I really don't have a good grasp on the 'why' - or the steps the reduce function is going through in handling the dynamic array
 export function multiplyAnyArray(dynamicArray) { 
 
     let firstEl = dynamicArray.reduce(
