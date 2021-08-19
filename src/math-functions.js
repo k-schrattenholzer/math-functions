@@ -58,9 +58,16 @@ To do addition, use your sum() function, and to do multiplication, use your mult
 function that you've already created. You're going to have to be resourceful to figure out 
 how to do this. However, you may continue to use the + operator for string concatenation.
 */
+//eslint-disable-line
 
-export function sumAndMultiplyThreeNumbers(a, b, c) { //eslint-disable-line
-
+export function sumAndMultiplyThreeNumbers(a, b, c) { 
+    let answerArray = [];
+    let sumTotal = (sum((sum(a, b)[0]), c))[0];
+    let productTotal = (multiply((multiply(a, b)[0]), c))[0];
+    let sumString = `${a} and ${b} and ${c} sum to ${sumTotal}.`;
+    let productString = `The product of ${a} and ${b} and ${c} is ${productTotal}.`;
+    answerArray.push (sumTotal, productTotal, sumString, productString);
+    return answerArray;
 }
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. 
